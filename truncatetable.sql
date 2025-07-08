@@ -1,0 +1,17 @@
+DROP DATABASE practicedb;
+CREATE TABLE Employees_address (
+  ID INT PRIMARY KEY,
+  add1 VARCHAR(100),
+  streetno INT,
+  area VARCHAR(50)
+);
+
+CREATE DATABASE CompanyDB;
+
+drop table Employees_address;
+select * from Employees_address;
+EXEC sp_rename'Employees_address','Emp_address';
+
+TRUNCATE TABLE Emp_address;
+
+

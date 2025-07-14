@@ -39,6 +39,20 @@ SELECT *
 INTO Employees1
 FROM EmployeeAddress;
 
+CREATE TABLE #EmployeesTemp (
+    ID INT,
+    Name VARCHAR(50),
+    Age INT
+);
+
+INSERT INTO #EmployeesTemp (ID, Name, Age)
+VALUES (1, 'Alice', 30), (2, 'Bob', 25);
+
+SELECT * FROM #EmployeesTemp;
+
+
+
+
 
 
 
